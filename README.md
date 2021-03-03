@@ -1,5 +1,5 @@
 # Election_Analysis
-## Overview of Election Audit(Explain the purpose of this election audit analysis.)
+## Overview of Election Audit
 Tom, a Colorado Board of Elections employee has given me the following tasks to complete the election audit of a recent local congressional election.
 
 1. Reporting the total number of votes cast.
@@ -14,12 +14,18 @@ Additionally, the election commission has requested some additional data to comp
 2. The percentage of votes from each county out of the total count
 3. The county with the highest turnout
 
+The python code created will automatically count the number of votes, identify the different candidates and counties, and calculate the number and percentage of votes for each candidate and county. As a result of using this code, the Board of Elections will save time from execution and reduce human errors by avoiding to enter formulas in excel manually.
+
 ## Resources 
 - Data Source: election_results.csv
-- Software: Python 3.6.4, Visual Studio Code 1.53.2
+- Software: Python 3.7.6, Visual Studio Code 1.53.2
 
 ### Election-Audit Results
-The analysis of the election show that:
+The code's summary output of the election is shown below:
+
+![Summary_Results](Summary_Results.PNG)
+
+According to the analysis of the election:
 * There were 369,711 votes cast in the election.
 * The counties that participated in the congressional election were:
     - Jefferson
@@ -44,9 +50,16 @@ The analysis of the election show that:
 
 ### Election-Audit Summary
 
+The purpose of this code is to automatically count the total number of votes, identify the candidates and the counties in an election, and calculate their respective votes and percentages. 
+
 The election commission could use this code not only for other future U.S. Congressional districts elections but also for senatorial districts and local elections. Before automating this process using this code, this job was normally done in excel which is prone to human error and takes longer time to execute and review, especially when the dataset gets larger. By using this code, it is possible to instantly determine the candidates in an election, counting their votes and calculating their percentages of the votes without any errors and regardless of the size of the dataset.
 
-One potential way this scriot could be used for any election is by changing the names of the variables, lists and dictionaries used to store values. As shown in the image below, many of the variables are named by the areas where the elections were conducted. For instance, instead of calling them "county", it would be better to use a general name such as "area" or readjust the name according to the election conducted. This should be done to avoid confusion when reading or debugging the code in the future. 
+This script can be modified for any election by changing the summary output in both the command line and the text file. As shown in the image below, 
+
+![Summary_Turnout_County_Votes](Summary_Turnout_County_Votes.PNG)
+
+
+lists and dictionaries used to store values. As shown in the image below, many of the variables are named by the areas where the elections were conducted. For instance, instead of calling them "county", it would be better to use a general name such as "area" or readjust the name according to the election conducted. This should be done to avoid confusion when reading or debugging the code in the future. 
 
 ![County_List_Dictionary](County_List_Dictionary.PNG)
 ![Largest_County_List_Dictionary](Largest_County_List_Dictionary.PNG)
